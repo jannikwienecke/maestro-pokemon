@@ -1,0 +1,23 @@
+appId: ${APP_ID}
+---
+- launchApp:
+    clearState: true
+
+- runScript: ../common/init.js
+
+- runFlow:
+    when:
+      true: ${TARGET_ENV != 'local'}
+    file: ../common/local-setup.yaml
+
+# Check Region List
+- runFlow: ../subflow/region-list.yaml
+
+# Check Pokemons in a Region
+- runFlow: ../subflow/pokemons-in-region.yaml
+
+# Search for a Pokemon
+- runFlow: ../subflow/search-pokemon.yaml
+
+# Check Pokemon Details
+- runFlow: ../subflow/pokemon-details.yaml

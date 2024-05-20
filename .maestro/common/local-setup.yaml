@@ -1,0 +1,22 @@
+appId: ${APP_ID}
+---
+
+- startRecording: recording-pokemon-lookup-journey
+- runFlow:
+    when:
+      visible: "http://localhost:8081"
+    commands:
+      - tapOn: "http://localhost:8081"
+- runFlow:
+    when:
+      visible: "Got It"
+    commands:
+      - tapOn: "Got It"
+- runFlow:
+    when:
+      visible: "Toggle performance monitor"
+    commands:
+      - swipe:
+          from:
+            text: "Toggle performance monitor"
+          direction: DOWN
