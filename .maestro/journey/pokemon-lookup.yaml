@@ -7,7 +7,7 @@ appId: ${APP_ID}
 
 - runFlow:
     when:
-      true: ${TARGET_ENV != 'local'}
+      true: ${TARGET_ENV == 'local'}
     file: ../common/local-setup.yaml
 
 # Check Region List
