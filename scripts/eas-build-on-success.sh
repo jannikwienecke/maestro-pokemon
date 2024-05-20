@@ -18,9 +18,9 @@ if [ "$EAS_BUILD_PLATFORM" = "ios" ]; then
    echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
    sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
    export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-   maestro cloud -e APP_ID=com.thekharche.maestroexpopokedex --api-key=$MAESTRO_API_KEY --app-file=$APP_EXECUTABLE_PATH --flows=.maestro/
+   maestro cloud -e APP_ID=com.wienecke.maestroexpopokedex --api-key=$MAESTRO_API_KEY --app-file=$APP_EXECUTABLE_PATH --flows=.maestro/
 
 else
    APP_EXECUTABLE_PATH=/home/expo/workingdir/build/android/app/build/outputs/apk/release/app-release.apk
-   maestro cloud -e APP_ID=com.thekharche.maestroexpopokedex --api-key=$MAESTRO_API_KEY --app-file=$APP_EXECUTABLE_PATH --flows=.maestro/
+   maestro cloud -e APP_ID=com.wienecke.maestroexpopokedex --api-key=$MAESTRO_API_KEY --app-file=$APP_EXECUTABLE_PATH --flows=.maestro/
 fi
