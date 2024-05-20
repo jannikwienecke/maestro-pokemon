@@ -16,21 +16,21 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thekharche.maestroexpopokedex"
+      "bundleIdentifier": "com.jannikwienecke.maestroexpopokedex"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000014"
       },
-      "package": "com.thekharche.maestroexpopokedex"
+      "package": "com.jannikwienecke.maestroexpopokedex"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "213fa746-d634-4673-bcd0-ef997e0a24c6"
+        "projectId": "79bc67a0-16cc-44b6-ab03-266af7caf5f2"
       }
     }
   }
